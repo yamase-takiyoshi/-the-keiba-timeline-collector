@@ -1,6 +1,7 @@
 name = "the-keiba-timeline-collector"
 main = "worker_v6.1.4_AlwaysOnTimeline_DO.js"
 compatibility_date = "2026-09-24"
+compatibility_flags = ["global_fetch_strictly_public"]
 
 # 既存のThe競馬 Worker。必要なら自分のURLへ変更。
 [vars]
