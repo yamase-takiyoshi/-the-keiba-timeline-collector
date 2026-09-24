@@ -1,0 +1,21 @@
+name = "the-keiba-timeline-collector"
+main = "worker_v6.1.4_AlwaysOnTimeline_DO.js"
+compatibility_date = "2026-09-24"
+
+# 既存のThe競馬 Worker。必要なら自分のURLへ変更。
+[vars]
+UPSTREAM_PROXY_URL = "https://abc.nitta-katsuhiko.workers.dev"
+MANIFEST_SOURCE_URL = "https://abc.nitta-katsuhiko.workers.dev"
+# TIMELINE_TOKEN はsecret推奨: wrangler secret put TIMELINE_TOKEN
+
+[durable_objects]
+bindings = [
+  { name = "TIMELINE", class_name = "OddsTimelineCollector" }
+]
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["OddsTimelineCollector"]
+
+[triggers]
+crons = ["* * * * *"]
