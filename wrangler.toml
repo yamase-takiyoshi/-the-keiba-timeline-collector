@@ -7,7 +7,15 @@ compatibility_flags = ["global_fetch_strictly_public"]
 [vars]
 UPSTREAM_PROXY_URL = "https://abc.nitta-katsuhiko.workers.dev"
 MANIFEST_SOURCE_URL = "https://abc.nitta-katsuhiko.workers.dev"
+
+# GitHub archive settings
+GITHUB_OWNER = "yamase-takiyoshi"
+GITHUB_REPO = "takuya"
+GITHUB_BRANCH = "main"
+GITHUB_BASE_PATH = "data"
+
 # TIMELINE_TOKEN はsecret推奨: wrangler secret put TIMELINE_TOKEN
+# GITHUB_TOKEN もsecretで設定: wrangler secret put GITHUB_TOKEN
 
 [durable_objects]
 bindings = [
