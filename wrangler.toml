@@ -1,5 +1,5 @@
 name = "the-keiba-timeline-collector"
-main = "worker_v6.1.4_AlwaysOnTimeline_DO.js"
+main = "worker_timeline_v6.1.12_OddsRelease5s_Post3m_GitHubArchive_All8Markets.js"
 compatibility_date = "2026-09-24"
 compatibility_flags = ["global_fetch_strictly_public"]
 
